@@ -1,0 +1,31 @@
+{
+  "name": "obsidian-layered",
+  "version": "0.1.0",
+  "description": "Clean, minimal theme for Obsidian.",
+  "scripts": {
+    "build": "webpack",
+    "prepare": "husky install",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuckharmston/obsidian-layered.git"
+  },
+  "author": "Chuck Harmston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chuckharmston/obsidian-layered/issues"
+  },
+  "homepage": "https://github.com/chuckharmston/obsidian-layered#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "husky": "^7.0.4",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-fix-style-only-entries": "^0.6.1"
+  }
+}
