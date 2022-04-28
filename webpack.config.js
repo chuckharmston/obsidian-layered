@@ -1,10 +1,16 @@
+const { readFileSync } = require('fs');
 const { resolve } = require('path');
 
+const { BannerPlugin } = require('webpack');
 const CopyPlugin = require("copy-webpack-plugin");
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const VAULT = process.env.VAULT || null;
+
+const SETTINGS = `/* @settings
+${readFileSync('./src/settings.yaml', 'utf8')}
+*/`;
 
 const config = {
     entry: {
@@ -32,6 +38,13 @@ const config = {
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css'
+        }),
+        new BannerPlugin({
+            banner: SETTINGS,
+            raw: true,
+            test: /obsidian.css$/i,
+            entryOnly: true,
+            footer: true,
         }),
     ],
 };
