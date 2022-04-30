@@ -55,9 +55,9 @@
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
 
 "@types/node@*":
-  version "17.0.29"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.29.tgz#7f2e1159231d4a077bb660edab0fde373e375a3d"
-  integrity sha512-tx5jMmMFwx7wBwq/V7OohKDVb/JwJU5qCVkeLMh1//xycAJ/ESuw9aJ9SEtlCZDYi2pBfe4JkisSoAtbOsBNAA==
+  version "17.0.30"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.30.tgz#2c6e8512acac70815e8176aa30c38025067880ef"
+  integrity sha512-oNBIZjIqyHYP8VCNAV9uEytXVeXG2oR0w9lgAXro20eugRQfY002qr3CUl6BAe+Yf/z3CRjPdz27Pu6WWtuSRw==
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -394,9 +394,9 @@ dir-glob@^3.0.1:
     path-type "^4.0.0"
 
 electron-to-chromium@^1.4.118:
-  version "1.4.124"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.124.tgz#e9015e234d8632920dcdf5480351da9e845ed220"
-  integrity sha512-VhaE9VUYU6d2eIb+4xf83CATD+T+3bTzvxvlADkQE+c2hisiw3sZmvEDtsW704+Zky9WZGhBuQXijDVqSriQLA==
+  version "1.4.127"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.127.tgz#4ef19d5d920abe2676d938f4170729b44f7f423a"
+  integrity sha512-nhD6S8nKI0O2MueC6blNOEZio+/PWppE/pevnf3LOlQA/fKPCrDp2Ao4wx4LFwmIkJpVdFdn2763YWLy9ENIZg==
 
 enhanced-resolve@^5.9.2:
   version "5.9.3"
@@ -1120,9 +1120,9 @@ terser-webpack-plugin@^5.1.3:
     terser "^5.7.2"
 
 terser@^5.7.2:
-  version "5.13.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.13.0.tgz#d43fd71861df1b4df743980caa257c6fa03acc44"
-  integrity sha512-sgQ99P+fRBM1jAYzN9RTnD/xEWx/7LZgYTCRgmYriSq1wxxqiQPJgXkkLBBuwySDWJ2PP0PnVQyuf4xLUuH4Ng==
+  version "5.13.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.13.1.tgz#66332cdc5a01b04a224c9fad449fc1a18eaa1799"
+  integrity sha512-hn4WKOfwnwbYfe48NgrQjqNOH9jzLqRcIfbYytOXCOv46LBfWr9bDS17MQqOi+BWGD0sJK3Sj5NC/gJjiojaoA==
   dependencies:
     acorn "^8.5.0"
     commander "^2.20.0"

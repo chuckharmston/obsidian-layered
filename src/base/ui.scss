@@ -1,0 +1,24 @@
+:root {
+    /*
+    Default values for the UI setting managed by the Style Settings plugin.
+    This ensures that the theme works for users without the plugin.
+    */
+    --layered-ui: 3px;
+
+    /*
+    The scale coefficient is calculated as (0.5x + 2.5), where x is the value
+    of var(--layered-ui), which is either set by Style Settings or above.
+    */
+    --layered-ui-scale: calc(0.5 * var(--layered-ui) + 2.5px);
+
+    /*
+    Stock UI sizes.
+    */
+    --layered-ui-xxs: var(--layered-ui-scale);
+    --layered-ui-xs: calc(var(--layered-ui-scale) * 2);
+    --layered-ui-s: calc(var(--layered-ui-scale) * 4);
+    --layered-ui-m: calc(var(--layered-ui-scale) * 8);
+    --layered-ui-l: calc(var(--layered-ui-scale) * 12);
+    --layered-ui-xl: calc(var(--layered-ui-scale) * 10);
+    --layered-ui-xxl: calc(var(--layered-ui-scale) * 16);
+}

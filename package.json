@@ -4,6 +4,7 @@
   "description": "Clean, minimal theme for Obsidian.",
   "scripts": {
     "build": "webpack",
+    "build:obsidian": "sass --no-source-map ./src/obsidian.scss:obsidian.css",
     "prepare": "husky install",
     "watch": "webpack --watch"
   },

@@ -1,0 +1,29 @@
+name: Layered Theme
+id: layered-theme
+settings:
+  -
+    id: layered-icons
+    title: Customized Icons
+    description: Use a simpler set of icons.
+    type: class-toggle
+    default: true
+  -
+    id: layered-ui
+    title: UI Size
+    description: The interface size for the layered theme.
+    type: variable-number-slider
+    default: 3
+    format: px
+    min: 1
+    max: 5
+    step: 1
+  -
+    id: layered-font
+    title: Font Size
+    description: The base font size for the layered theme.
+    type: variable-number-slider
+    default: 3
+    format: px
+    min: 1
+    max: 5
+    step: 1

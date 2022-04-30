@@ -1,0 +1,26 @@
+/*
+
+This file uses a background-clip trick to create an 8px rectangular scrollbar,
+inset 4px from the content. Since CSS variables aren't accessible from the
+::-webkit-scrollbar pseudo-elements, we need to stub in the default values, and
+the scrollbars will not scale with the UI size. 
+*/
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    height: 12px; // equal to --layered-ui-s + --layered-ui-xs
+    width: 12px; // equal to --layered-ui-s + --layered-ui-xs
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 4px solid transparent; // equal to --layered-ui-xs
+    border-right: 4px solid transparent; // equal to --layered-ui-xs
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-track {
+    margin: 4px; // equal to --layered-ui-xs
+}

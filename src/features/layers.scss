@@ -1,0 +1,34 @@
+.workspace {
+    /*
+    Customize the z-indexes to:
+
+    1. Put the status bar beneath the main content.
+    2. Raise the splits above the side socks.
+    3. Raise the root above the splits.
+
+    We'll then apply box shadows to create the namesake layered effect.
+    */
+    --layer-status-bar: 10;
+    --layer-sidedock: 15;
+    --layer-split: 20;
+    --layer-root: 25;
+
+    --layered-shadow-border: var(--background-secondary);
+    --layered-shadow-size: var(--layered-ui-s);
+    --layered-shadow: 0 0 0 1px var(--layered-shadow-border), 1px 0 var(--layered-shadow-size) 0 var(--layered-shadow-color);
+}
+
+.workspace > .mod-left-split,
+.workspace > .mod-right-split {
+    z-index: var(--layer-split);
+}
+
+.workspace > .mod-root {
+    z-index: var(--layer-root);
+}
+
+.workspace > .mod-root > .workspace-leaf,
+.workspace > .mod-right-split,
+.workspace > .mod-left-split  {
+    box-shadow: var(--layered-shadow) !important;
+}

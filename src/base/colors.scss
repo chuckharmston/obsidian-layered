@@ -1,0 +1,191 @@
+@use "sass:color";
+
+$red: #BA2D46;
+$orange: #C96527;
+$yellow: #B9852D;
+$green: #659E58;
+$teal: #3783B7;
+$blue: #4B7BEA;
+$purple: #98379F;
+$grey: #5E5E5E;
+$silver: #BBBBBB;
+$black: #1E1E1E;
+$white: #FFFFFF;
+
+$red-30: darken($red, 10%);
+$red-40: darken($red, 5%);
+$red-50: $red;
+$red-60: lighten($red, 5%);
+$red-70: lighten($red, 10%);
+
+$orange-30: darken($orange, 10%);
+$orange-40: darken($orange, 5%);
+$orange-50: $orange;
+$orange-60: lighten($orange, 5%);
+$orange-70: lighten($orange, 10%);
+
+$yellow-30: darken($yellow, 10%);
+$yellow-40: darken($yellow, 5%);
+$yellow-50: $yellow;
+$yellow-60: lighten($yellow, 5%);
+$yellow-70: lighten($yellow, 10%);
+
+$green-30: darken($green, 10%);
+$green-40: darken($green, 5%);
+$green-50: $green;
+$green-60: lighten($green, 5%);
+$green-70: lighten($green, 10%);
+
+$teal-30: darken($teal, 10%);
+$teal-40: darken($teal, 5%);
+$teal-50: $teal;
+$teal-60: lighten($teal, 5%);
+$teal-70: lighten($teal, 10%);
+
+$blue-30: darken($blue, 10%);
+$blue-40: darken($blue, 5%);
+$blue-50: $blue;
+$blue-60: lighten($blue, 5%);
+$blue-70: lighten($blue, 10%);
+
+$purple-30: darken($purple, 10%);
+$purple-40: darken($purple, 5%);
+$purple-50: $purple;
+$purple-60: lighten($purple, 5%);
+$purple-70: lighten($purple, 10%);
+
+$silver-30: darken($silver, 10%);
+$silver-40: darken($silver, 5%);
+$silver-50: $silver;
+$silver-60: lighten($silver, 5%);
+$silver-70: lighten($silver, 10%);
+
+$grey-30: darken($grey, 10%);
+$grey-40: darken($grey, 5%);
+$grey-50: $grey;
+$grey-60: lighten($grey, 5%);
+$grey-70: lighten($grey, 10%);
+
+$black-10: $black;
+$black-20: lighten($black, 1%);
+$black-30: lighten($black, 2%);
+$black-40: lighten($black, 3%);
+$black-50: lighten($black, 4%);
+
+$white-60: darken($white, 4%);
+$white-70: darken($white, 3%);
+$white-80: darken($white, 2%);
+$white-90: darken($white, 1%);
+$white-100: $white;
+
+$scrollbar-light-active-thumb: color.adjust($black-10, $alpha: -0.875);
+$scrollbar-light-bg: transparent;
+$scrollbar-light-thumb: color.adjust($black-10, $alpha: -0.9);
+
+$shadow-light: color.adjust($black-10, $alpha: -0.75);
+$shadow-dark: color.adjust($white-100, $alpha: -0.85);
+
+:root {
+    --layered-red-30: #{$red-30};
+    --layered-red-40: #{$red-40};
+    --layered-red-50: #{$red-50};
+    --layered-red-60: #{$red-60};
+    --layered-red-70: #{$red-70};
+
+    --layered-orange-30: #{$orange-30};
+    --layered-orange-40: #{$orange-40};
+    --layered-orange-50: #{$orange-50};
+    --layered-orange-60: #{$orange-60};
+    --layered-orange-70: #{$orange-70};
+
+    --layered-yellow-30: #{$yellow-30};
+    --layered-yellow-40: #{$yellow-40};
+    --layered-yellow-50: #{$yellow-50};
+    --layered-yellow-60: #{$yellow-60};
+    --layered-yellow-70: #{$yellow-70};
+
+    --layered-green-30: #{$green-30};
+    --layered-green-40: #{$green-40};
+    --layered-green-50: #{$green-50};
+    --layered-green-60: #{$green-60};
+    --layered-green-70: #{$green-70};
+
+    --layered-teal-30: #{$teal-30};
+    --layered-teal-40: #{$teal-40};
+    --layered-teal-50: #{$teal-50};
+    --layered-teal-60: #{$teal-60};
+    --layered-teal-70: #{$teal-70};
+
+    --layered-blue-30: #{$blue-30};
+    --layered-blue-40: #{$blue-40};
+    --layered-blue-50: #{$blue-50};
+    --layered-blue-60: #{$blue-60};
+    --layered-blue-70: #{$blue-70};
+
+    --layered-purple-30: #{$purple-30};
+    --layered-purple-40: #{$purple-40};
+    --layered-purple-50: #{$purple-50};
+    --layered-purple-60: #{$purple-60};
+    --layered-purple-70: #{$purple-70};
+
+    --layered-silver-30: #{$silver-30};
+    --layered-silver-40: #{$silver-40};
+    --layered-silver-50: #{$silver-50};
+    --layered-silver-60: #{$silver-60};
+    --layered-silver-70: #{$silver-70};
+
+    --layered-grey-30: #{$grey-30};
+    --layered-grey-40: #{$grey-40};
+    --layered-grey-50: #{$grey-50};
+    --layered-grey-60: #{$grey-60};
+    --layered-grey-70: #{$grey-70};
+
+    --layered-black-10: #{$black-10};
+    --layered-black-20: #{$black-20};
+    --layered-black-30: #{$black-30};
+    --layered-black-40: #{$black-40};
+    --layered-black-50: #{$black-50};
+
+    --layered-white-60: #{$white-60};
+    --layered-white-70: #{$white-70};
+    --layered-white-80: #{$white-80};
+    --layered-white-90: #{$white-90};
+    --layered-white-100: #{$white-100};
+}
+
+body.theme-light {
+    --layered-shadow-color: #{$shadow-light};
+
+    --background-primary: var(--layered-white-100);
+    --background-primary-alt: var(--layered-white-90);
+    --background-secondary: var(--layered-white-80);
+    --background-secondary-alt: var(--layered-white-60);
+
+    --scrollbar-active-thumb-bg: #{$scrollbar-light-active-thumb};
+    --scrollbar-bg: #{$scrollbar-light-bg};
+    --scrollbar-thumb-bg: #{$scrollbar-light-thumb};    
+
+    --text-accent: var(--layered-grey-60);
+    --text-accent-hover: var(--layered-grey-70);
+    --text-normal: var(--layered-black-30);
+    --text-muted: var(--layered-silver-30);
+    --text-muted-rgb: #{color.red($silver-30)}, #{color.green($silver-30)}, #{color.blue($silver-30)};
+    --text-faint: var(--layered-grey-50);
+    --text-error: var(--layered-red-50);
+    --text-error-hover: var(--layered-red-60);
+    --text-highlight-bg: color.adjust($yellow-70, $alpha: -0.66);
+    --text-highlight-bg-active: var(--layered-silver-60);
+    --text-selection: var(--layered-silver-70);
+    --text-on-accent: #dcddde;
+}
+
+body.theme-dark {
+    --layered-shadow-color: #{$shadow-dark};
+
+    --background-primary: var(--layered-black-40);
+    --background-primary-alt: var(--layered-back-30);
+    --background-secondary: var(--layered-black-20);
+    --background-secondary-alt: var(--layered-black-10);
+
+    --text-error: var(--layered-red-70);
+}

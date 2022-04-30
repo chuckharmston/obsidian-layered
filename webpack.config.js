@@ -33,6 +33,12 @@ const config = {
             },
         ],
     },
+    watchOptions: {
+        ignored: ['**/node_modules'],
+    },
+    optimization: {
+        minimize: false
+    },
     plugins: [
         new FixStyleOnlyEntriesPlugin(),
         new MiniCssExtractPlugin({

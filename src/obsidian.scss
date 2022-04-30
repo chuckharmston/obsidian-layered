@@ -1,7 +1,6 @@
-body {
-    background: #0F0;
+@import './base/colors.scss';
+@import './base/font.scss';
+@import './base/ui.scss';
 
-    p {
-        background: #F0F;
-    }
-}
+@import './features/layers.scss';
+@import './features/scrollbar.scss';
